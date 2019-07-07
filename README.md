@@ -86,6 +86,10 @@ const App = () => {
 
 > String value of a search query.
 
+### debounceMs
+
+> Number value, defaults to 400ms. Milliseconds to debounce the autocomplete API request
+
 ### options
 
 > Object of [Google options](https://developers.google.com/places/web-service/autocomplete)
