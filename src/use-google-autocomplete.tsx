@@ -96,8 +96,9 @@ export default function useGoogleAutocomplete({
       const language = options.language ? `&language=${options.language}` : ''
       const location = options.location ? `&location=${options.location}` : ''
       const radius = options.radius ? `&radius=${options.radius}` : ''
+      const components = options.components ? `&components=${options.components}` : ''
 
-      const url = `${cors}https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${query}${types}${language}${location}${radius}${strictbounds}${offset}&key=${apiKey}&sessiontoken=${
+      const url = `${cors}https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${query}${types}${language}${location}${radius}${components}${strictbounds}${offset}&key=${apiKey}&sessiontoken=${
         sessionToken.current
       }`
 
